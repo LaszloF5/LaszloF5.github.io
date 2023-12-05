@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --section-padding: 80px 16px;
+}
+
+body {
+    font-size: 10px;
+}
+
+header {
+    height: 100vh;
+    outline: 1px solid black;
+}
+
+.header-nav {
+    height: 60px;
+    background-color: #B7673C;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.header-nav-name {
+    position:absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 1.5rem;
+    line-height: 35px;
+    /* color: whitesmoke; */
+}
+
+/* HAMBURGER MENU */
+
+#menu__toggle {
+    visibility: hidden;
+}
+
+.hamburger-icon {
+    /* padding-top: 8px; */
+    position: absolute;
+    top: 18px;
+    right: 10px;
+}
+
+.menu__box {
+    list-style: none;
+    height: 200px;
+    width: 100%;
+    position: fixed;
+    background-color: #B7673C;
+    top: 0;
+    visibility: hidden;
+    /*Balról beúszik*/
+    top: -200px;
+    transition-duration: 0.5s;
+}
+
+#menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    top: 40px;
+  }
+
+.menu__box li a {
+    text-decoration: none;
+}
+
+.menu__box li {
+    padding: 5px 10px 5px 20px;
+}
+
+.menu__item {
+    font-size: 1.6rem;
+    color: whitesmoke;
+}
+
+/* Elso oldal blokk-elem */
+
+.about-section-container {
+    padding: var(--section-padding);
+    outline: 1px solid black;
+    height: calc(100vh - 60px);
+}
+
+.about-section-container h2 {
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    font-size: calc(1.725rem + 5.7vw);
+}
+
+.about-section-container p {
+    font-size: 1.15rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #464c52;
+}
+
+.icons {
+    display: flex;
+    padding: 30px;
+}
+
+.icons a img {
+    padding-right: 20px;
+}
+
+/* BLOKK-2 */
+
+.blokk2-container {
+    height: 100vh;
+    outline: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* 
+.kepessegek-container {
+    padding: var(--section-padding);
+    outline: 2px solid blue;
+}
+
+.second-h2 {
+    font-size: 2.5rem;
+    line-height: 35px;
+} */
+
+.kepessegek-section-container {
+    padding: var(--section-padding);
+    outline: 1px solid black;
+    height: calc(100vh - 60px);
+}
+
+.kepessegek-section-container h2 {
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    font-size: calc(1.725rem + 5.7vw);
+}
+
+.kepessegek-section-container h3 {
+    font-size: 1.15rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #464c52;
+    list-style: none;
+}
+
+.kepessegek-section-container ul {
+    list-style: none;
+}
+
